@@ -20,7 +20,7 @@ cd /tmp/watchexec-parent-ignore-fail/subdir0/ && watchexec -vvv --no-global-igno
 
 Both watchers output `changed` once.
 
-Creating a directory `ignored-from-child-gitignore` in `subdir0` should do nothing, since it has been ignored in `watchexec-parent-ignore-fail/subdir0/.gitignore`:
+Creating a directory `subdir0/ignored-from-child-gitignore` should do nothing, since it has been ignored in `watchexec-parent-ignore-fail/subdir0/.gitignore`:
 ```
 mkdir /tmp/watchexec-parent-ignore-fail/subdir0/ignored-from-child-gitignore
 ```
