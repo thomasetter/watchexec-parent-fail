@@ -1,4 +1,8 @@
-On a Linux machine, run (each in a new shell):
+On a Linux machine, e.g.
+```
+docker run --rm -it -v /tmp/archie:/outer-tmp archlinux bash -c 'pacman -Sy --noconfirm git watchexec tmux && tmux'
+```
+run (each in a new shell):
 
 ```
 cd /tmp && git clone https://github.com/thomasetter/watchexec-parent-ignore-fail.git && cd watchexec-parent-ignore-fail
