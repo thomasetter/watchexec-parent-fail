@@ -1,1 +1,3 @@
 subdir0/ignored-from-parent-gitignore
+self-watching-out
+parent-watching-out
