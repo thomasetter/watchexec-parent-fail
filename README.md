@@ -1,6 +1,6 @@
 On a Linux machine, e.g.
 ```
-docker run --rm -it -v /tmp/archie:/outer-tmp archlinux bash -c 'pacman -Sy --noconfirm git watchexec tmux && tmux'
+docker run --rm -it archlinux bash -c 'pacman -Sy --noconfirm git watchexec tmux && tmux'
 ```
 run (each in a new shell):
 
