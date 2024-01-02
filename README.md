@@ -6,12 +6,12 @@ cd /tmp && git clone https://github.com/thomasetter/watchexec-parent-ignore-fail
 
 Run a watcher in the main directory:
 ```
-cd /tmp/watchexec-parent-ignore-fail/ && watchexec -vvv -w . 'echo changed' | tee /tmp/watchexec-parent-ignore-fail/self-watching-out
+cd /tmp/watchexec-parent-ignore-fail/ && watchexec -vvv --no-global-ignore -w . 'echo changed' | tee /tmp/watchexec-parent-ignore-fail/self-watching-out
 ```
 
 Run a watcher for the main directory in the subdirectory:
 ```
-cd /tmp/watchexec-parent-ignore-fail/subdir0/ && watchexec -vvv -w .. 'echo changed' | tee /tmp/watchexec-parent-ignore-fail/parent-watching-out
+cd /tmp/watchexec-parent-ignore-fail/subdir0/ && watchexec -vvv --no-global-ignore -w .. 'echo changed' | tee /tmp/watchexec-parent-ignore-fail/parent-watching-out
 ```
 
 Both watchers output `changed` once.
